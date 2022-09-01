@@ -32,3 +32,12 @@ header('Pragma: no-cache');
 
 header('Location: ../../');
 exit;
+
+?>
+
+<form id="form__submit" action="">
+  <label for="firstname">First name:</label><br>
+  <input class=" text-danger" type="text" id="firstname" name="firstname" value="<?php echo "John Doe"?>"><br>
+  <label for="lastname">Last name:</label><br>
+  <input type="text" id="lastname" name="lastname" value="<?php echo "Abraham Ekene-onwon Hanson"?>"><br><br>
+</form> 

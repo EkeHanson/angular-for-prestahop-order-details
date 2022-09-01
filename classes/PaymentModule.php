@@ -547,6 +547,8 @@ abstract class PaymentModuleCore extends Module
 
             if (self::DEBUG_MODE) {
                 PrestaShopLogger::addLog('PaymentModule::validateOrder - Hook validateOrder is about to be called', 1, null, 'Cart', (int) $id_cart, true);
+                var_dump($this->formatProductAndVoucherForEmail($products_list));
+                die();
             }
 
             // Hook validate order
